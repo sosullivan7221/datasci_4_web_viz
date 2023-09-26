@@ -5,7 +5,7 @@ from shiny import App, render, ui
 
 # Load data
 def load_data():
-    path = r'C:\Users\Sean\LocalDocuments\Code\AHI\datasci_4_web_viz\dataset\massachusetts_data.csv'
+    path = 'https://raw.githubusercontent.com/sosullivan7221/datasci_4_web_viz/main/dataset/massachusetts_data.csv'
     return pd.read_csv(path)
 df = load_data()
 df_sleep = df[(df['MeasureId'] == 'SLEEP') & (df['Data_Value_Type'] == 'Age-adjusted prevalence')]
